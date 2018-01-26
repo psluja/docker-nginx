@@ -92,7 +92,7 @@ RUN set -x \
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 	&& ln -sf /dev/stderr /var/log/nginx/error.log
 
-RUN apt-get install -y nginx nginx-extras
+RUN apt-get install -y nginx-extras
 
 EXPOSE 80
 
